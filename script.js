@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Create remove button
         const removeButton = document.createElement('Button')
         removeButton.classList.add("remove-btn")
-        removeButton.textContent = "remove"
+        removeButton.textContent = "Remove"
         
         // add remove button to the list
         listItem.appendChild(removeButton)
