@@ -35,7 +35,16 @@ document.addEventListener('DOMContentLoaded', () => {
         taskInput.value = ""
     }
     
+    // adding the task text to list
     addButton.addEventListener("click", () => {
         addTask() 
+    })
+
+    // using Enter on keyboard to add to list
+    taskInput.addEventListener("keypress", (event) => {
+        if (event.key === "Enter") {
+            const taskText = taskInput.value
+            addTask(taskText)
+        }
     })
 })
